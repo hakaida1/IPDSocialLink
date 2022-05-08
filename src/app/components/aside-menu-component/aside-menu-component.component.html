@@ -1,0 +1,51 @@
+<div id="aside-data">
+    <div class="user-infos">
+      <img src="assets/img/ipd.png" alt="" class="user-img">
+      <div class="user-name-infos">
+        <span class="user-username">momo_niang_first</span>
+      </div>
+      <button class="btn">Changez</button>
+    </div>
+    <div class="suggestions">
+      <div class="suggestions-heading">
+        <h2>Instagram recommendation</h2>
+  
+        <button class="btn black">voir tout</button>
+      </div>
+      <div class="suggestions-wrapper">
+        <div class="suggestion" *ngFor="let suggestion of suggestions">
+          <img [src]="suggestion.userImage" alt="" class="user-suggestion-avatar">
+          <div class="user-suggestion-data">
+            <span class="user-username">{{ suggestion.user }}</span>
+            <span class="user-info">Instagram recommendation</span>
+          </div>
+          <button class="btn">Suivre</button>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div class="insta-infos">
+      
+      <ul class="insta-infos-list">
+        <li class="insta-info">About</li>
+        <li class="insta-info">Help</li>
+        <li class="insta-info">Press</li>
+        <li class="insta-info">API</li>
+        <li class="insta-info">jobs</li>
+        <li class="insta-info">Privacy</li>
+      </ul>
+  
+      <ul class="insta-infos-list">
+        <li class="insta-info">Terms</li>
+        <li class="insta-info">Locations</li>
+        <li class="insta-info">Top Accounts</li>
+        <li class="insta-info">Hashtags</li>
+        <li class="insta-info">Language</li>
+      </ul>
+      <h2> 
+        &copy; {{ year }} INSTAGRAM FROM META 
+      </h2>
+    </div>
+  </div>
+  

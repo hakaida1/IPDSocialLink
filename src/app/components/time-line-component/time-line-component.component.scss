@@ -1,0 +1,337 @@
+#stories {
+    background: var(--main-background-color);
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 16px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #stories .stories-container {
+    display: flex;
+    max-width: 591px;
+    transition: transform .2s ease-in;
+  }
+  
+  #stories .stories-container .story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+  }
+  
+  #stories .stories-container .story + .story {
+    margin-left: 6px;
+  }
+  
+  #stories .stories-container .story-user-img {
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, 	#feda75, #fa7e1e, #d62976) border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #stories .stories-container .story-user-img img {
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  #stories .stories-container .story-username {
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 5px;
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 74px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+    //post image 
+    .post-image {
+      width: 100%;
+      display: flex;
+    }
+    .post {
+      width: 100%;
+      min-height: 300px;
+      background-color: var(--main-background-color);
+      border: 1px solid #dbdbdb;
+      border-radius: 3px;
+    }
+    .post-image img {
+      width: 100%;
+      object-fit: cover;
+    }
+    
+   //POST HEADER
+.titleup{
+  margin-left: 1px;
+
+}
+
+  
+   .post-header {
+    width: 100%;
+    border-bottom: 1px solid #efefef;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .post-header .user-data {
+    display: flex;
+    align-items: center;
+  }
+  
+  .post-header .user-data .user-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  
+  .post-header .user-data .user-name:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .post-header .user-data .user-img {
+    height: fit-content;
+    display: flex;
+    font-size: 0;
+    cursor: pointer;
+  }
+  
+  .post-header .user-data .user-img img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .post-header .actions .btn-actions {
+    background: none;
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+  }
+  //post-MAIN
+  
+  .ui-carousel-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: auto;
+    padding: 0px;
+  
+  }
+  
+  
+  .post-container {
+    margin-top: 20px;
+    border: 0.1px solid rgb(219, 218, 218);
+    padding: 10px;
+  }
+  
+  .postimage{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+    
+  
+  }
+  
+  .postcontentimage img{
+  height: 600px;
+  width: 600px;
+  
+  
+  }
+  
+  .icons {
+    margin-top: 20px;
+    margin-left: 20px;
+  
+  }
+  
+  .icons svg {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .postinfo{
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .postuser{
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .row{
+    display: flex;
+    align-items: center;
+  }
+  
+  //post-footer
+  .post-footer {
+    padding: 10px;
+  }
+  
+  .post-footer .actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .post-footer .actions .actions-container .action-button {
+    background: none;
+    border: none;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .post-footer .actions .actions-container .action-button + .action-button {
+    margin-left: 10px;
+  }
+  
+  .post-footer .actions .actions-container .action-button:hover {
+    cursor: pointer;
+  }
+  
+  .post-footer .likes {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .post-footer .likes .user-img {
+    display: flex;
+  }
+  
+  .post-footer .likes .user-img img {
+    width: 20px;
+    height: 20px;  
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .post-footer .likes .likedby {
+    margin-left: 10px;
+  }
+  
+  .post-footer .likes .likedby b:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .post-footer .comments {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .post-footer .comments .comment {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  .post-footer .comments .comment .comment-author {
+    font-weight: 600;
+  }
+  
+  .post-footer .comments .comment .comment-author:hover {
+    text-decoration: underline;
+  }
+  
+  .post-footer .comments .comment .comment-content {
+    margin-left: 3px;
+  }
+  
+
+.location{
+  display: inline-block;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  font-size: 12px;
+}
+
+  .post-footer .timestamp {
+    display: inline-block;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    font-size: 11px;
+  }
+  
+  .new-comment {
+    display: flex;
+    height: 56px;
+    align-items: center;
+    border-top: 1px solid #efefef;
+    padding: 0 16px;
+  }
+  
+  button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  button.post2 {
+    color: var(--blue);
+    font-weight: 600;
+    transition: all .1s;
+  }
+  
+  button.post2:disabled {
+    cursor: default;
+    color: var(--filtered-blue);
+  }
+  
+  button.post2 {
+    cursor: pointer;
+  }
+  
+  .comment-input {
+    flex-grow: 1; 
+    margin: 10px; 
+    border: none; 
+    outline: none;
+  }
+  
+  .pulse {
+    animation-name: pulse;
+    animation-duration: .3s;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    } 50% {
+      transform: scale(1.2);
+    } 100% {
+      transform: scale(1);
+    }
+  }
+  
+  
